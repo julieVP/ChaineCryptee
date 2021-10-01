@@ -9,7 +9,7 @@ public class ChaineCryptee {
 	}
 	
 	public static ChaineCryptee deEnClair(String s, int d) {
-		return new ChaineCryptee(new ChaineCryptee(s,d).encrypte(),d); 
+		return new ChaineCryptee(new ChaineCryptee(s,-1*d).encrypte(),d);
 	}
 	
 	private ChaineCryptee (String s, int d) {
